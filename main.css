@@ -1,0 +1,168 @@
+body {
+    background: black/*url("img/ghostthing.jpg")*/;
+}
+
+/*Wrapper rule sets the main content of the page to only 
+take up a percentage of the view and centers it*/
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    border: 5px solid yellow;
+    padding: .25rem;
+    background-color: white;
+}
+
+/* Header flex rules */
+
+header {
+    display: flex;
+    border: 0px solid red;
+}
+
+header p {
+    padding-left: .5rem;
+    border: 0px solid red;
+    margin: 0;
+    flex-basis: 37%;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    text-align: left;
+    margin: 0 0 0 .25rem;
+    flex-basis: 30%;
+}
+
+/* resize image, round corners, and float to the right */
+
+img {
+    height: 3.5rem;
+    width: 9rem;
+    margin-left: 1rem;
+    box-shadow: 3px 3px #252C3F;
+    border: 2px solid black;
+    border-radius: .5rem;
+}
+
+
+/*  nav bar styling */
+
+nav {
+    border: 0px solid black;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    border: 0px dotted red;
+}
+
+nav li {
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .25rem;
+    flex-basis: 23.5%;
+    list-style-type: none;
+    background-color: black;
+    text-align: center;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bangers', cursive;
+}
+
+nav li:hover {
+    background-color: #551A8B;
+    color: white;
+}
+
+
+
+/* Grey panels */
+
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: .35rem 0;
+    border: 0px dotted green;
+}
+
+.panel {
+    flex-basis: 48.8%;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: .25rem;
+    padding: 0 .25rem 0 0;
+}
+
+p {
+    font-family: 'Permanent Marker', cursive;;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background-color: white;
+    border-radius: .25rem;
+    padding: .25rem;
+    margin-left: .25rem;
+}
+
+.dateloc {
+    font-size: .9rem;
+    background-color: #FFF400;
+    margin: 0;
+    border: 0px solid blue;
+    display: inline-block;
+}
+
+fieldset {
+    font-size: 1rem;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+    background-color: white;
+    border-radius: .25rem;
+    padding: .25rem;   
+    border: none;
+    display: inline-block;
+    margin: .25rem; 
+}
+
+label {
+    display: block;
+}
+
+
+/* Footer styling */
+
+.right {
+    text-align: right;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    border: 0px solid yellow;
+}
+
+footer li {
+    list-style-type: none;
+    margin-right: 1.2rem;
+    border: 0px dotted orange;
+}
+
+/* Bigger social icons, enlarge when you hover over them */
+footer i {
+    transform: scale(2); 
+}
+
+footer i:hover {
+    transform: scale(2.5);
+}

@@ -1,80 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Alien Abduction Order Form</title>
-	<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
-	<link href="forms.css" rel="stylesheet">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Caveat+Brush|Kalam|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<div class="wrapper">
-		<section>
-			<h1>Alien Abduction Order Form</h1>
-			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
-			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
-				<!-- info below from hypothetical dev-->
-				<input type="hidden" name="send_to" value="@.com">
-				<fieldset>
-					<legend>Your contact information</legend>
-					<label for="name">Your name</label>
-						<input type="text" id="name" name="name">
-					<label for="phone">Phone number</label>
-						<input type="tel" id="phone" name="phone" placeholder="test">
-					<label for="email">Email</label>
-						<input type="email" id="email" name="email">
-				</fieldset>
-				<fieldset>
-					<legend>About your abduction </legend>
-					<label for="date">Requested  date</label>
-						<input type="date" id="date" name="date">
-					<label for="qty">How many people would you like abducted?</label>
-						<input type="number" id="qty" name="qty" min="1" max="10">
-					<p>What type of UFO do you prefer?</p>
-					<label>
-						<input type="radio" name="ufotype" value="classic" checked>Classic oval UFO
-					</label>
-					<label>
-						<input type="radio" name="ufotype" value="starwars">Star Wars-style Imperial cruiser
-					</label>
-					<label>
-						<input type="radio" name="ufotype" value="battlestar">Battlestar Galactica-style Viper
-					</label>
-					<label>
-						<input type="radio" name="ufotype" value="borg">Borg-style cube
-					</label>
-					<label for="abtype">What type of abduction experience do you want?</label>
-					<select id="abtype" name="abtype">
-						<option selected>Select one...</option>
-						<option value="tour">Tour of the solar system</option>
-						<option value="dinner">Alien dinner and discussion</option>
-						<option value="dance">Alien dance lessons</option>
-						<option value="whale">Whale watching</option>
-					</select>
-					<label for="comments">Special requests:</label>
-					<textarea id="comments" name="comments"></textarea>
-					<label>
-						<input type="checkbox" value="subscribe" name="subscribe" checked>Add me to your email list!
-					</label>
-				</fieldset>
-				<button type="submit">Submit</button>
-			</form>						
-		</section>
-		<aside>
-			<h3>Our Location</h3>
-			<address>
-				Frontend Masters &middot;
-				60 South 6th Street &middot;
-				Suite 3625 &middot;
-				Minneapolis, MN 55402
-			</address>
-		</aside>
-	</div>
-	<script src="forms.js"></script>
+    <div class="wrapper">
+    <header>
+        <h1>From CS to CS!</h1>
+        <p>Iris Silverman's Adventures from Customer Service to Computer Science</p>
+        <img src="#" alt="Phone and comp pic">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Time for a change</a></li>
+            <li><a href="#">The beginning</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="#">Goals</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="flex">
+            <div class="panel 1">
+                <p class="dateloc">January 2018 - Time for a change</p>
+                <p>After nearly 8 years in Customer Service, Iris quits her job as department manager.</p>
+                <p class="dialogue">I'm ready for something new and challenging!</p>
+            </div>
+            <div class="panel 2">
+                <p class="dateloc">March 2018 - The beginning</p>
+                <p>Iris discovers the joy of coding and decides to pursue a career in software development!</p>
+                <p>She spends the next few months learning HTML5, CSS, and JavaScript using online resources like <a href="">MDN</a>.</p>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="panel 3">
+                <p class="dateloc">Fall 2018 - Progress</p>
+                <p>Iris enrolls in Front End Masters 2 week BootCamp!</p>
+                <fieldset>
+                    What Iris has been working on:
+                <label for="task">
+                    <input type="checkbox" name="task" checked>Codecademy - HTML, CSS, and JavaScript
+                </label>
+                <label for="task">
+                    <input type="checkbox" checked>MDN - HTML and CSS
+                </label>
+                <label for="task">
+                    <input type="checkbox" checked>FreeCodeCamp - Responsive Design
+                </label>
+                <label for="task">
+                    <input type="checkbox">FreeCodeCamp - JavaScript (In Progess!)
+                </label>
+                <label for="task">
+                    <input type="checkbox">FrontEndMasters BootCamp (In Progress!)
+                </label>
+                </fieldset>
+            </div>
+            <div class="panel 4">
+                <p class="dateloc">2019 - Goals!</p>
+                <p>What's next for our hero?</p>
+                <p>Landing her first job as a junior developer!</p>
+            </div>
+        </div>
+    <!--
+        <h2>My so-called professional life</h2>
+        <p>Hi! My name is Iris and I'm a 32 year old code newbie!</p>
+        <p>I used to work in the customer service department of a streaming media company. I started out in an entry level position and worked my way up to manager of the department.</p>
+        <p>There are lots of aspects of customer service that I really connect with, not the least of which is the Golden Rule, but I never really felt fulfilled by my day to day work</p>
+        <p>After I was promoted into the manager role, I interacted more and more with the company's developement team on projects and realized that I was interested in becoming a software developer.</p>
+        <p>It took me some time to make the change - but I eventually left my management role and dedicated myself to learning to code full time.</p>
+        <p>I enjoy solving problems - coming up with creative solutions - learning new things - perfecting all the little details in a project - and I get to do all of these things while coding.</p>
+        <h2>What do I know?</h2>
+        <p>I'm still pretty new to coding, but here is a list of the technologies I feel comfortable with:</p>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <h2>My coding goals</h2>
+        <p>One of the things I love the most about coding is that there is literally no end to the amount of information out there to learn.</p>
+        <p>Here is a list of things I would like to learn/do/master as a coder:</p>
+        <ul>
+            <li>Become a full stack developer</li>
+            <li>Learn C++</li>
+            <li>Master Python</li>
+            <li>Master JavaScript</li>
+            <li>Master CSS animations</li>
+            <li>Learn SQL</li>
+            <li>Learn MongoDB</li>
+            <li>Attend a hackathon</li>
+            <li>Create a mobile app</li>
+            <li>Create an interactive game</li>
+            <li>Get a job as a developer :)</li>
+            <li>Learn Ruby</li>
+            <li>Learn Node.JS / Vue.JS</li>
+            <li>Learn SASS</li>
+            <li>Learn React</li>
+        </ul>
+        <p class="aside">Since I've started my coding journey I've spent most of my time using free online resources like <a href="">MDN</a>, <a href="">Codecademy</a>, <a href="">FreeCodeCamp</a>, and more.</p>
+        <p class="aside">I would like to pay it forward and use my newfound skills to help teach other newbies how to code - whether through writing how-to pages (I have experience as a technical writer) or through mentoring new coders.</p>
+    -->
+    </main>
+    <footer>
+        <div class="panel">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/iris-s-70120913b/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/ayerest"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://ayerest.github.io/"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://codepen.io/eyerise/#"><i class="fab fa-codepen"></i></a></li>
+            </ul>
+        </div>  
+    </footer>
+    </div>
 </body>
 </html>
-
-
-
-
-
