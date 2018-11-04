@@ -1,258 +1,319 @@
-body {
-    background: black/*url("img/ghostthing.jpg")*/;
-}
+/* Styles for every page */
 
-/*Wrapper rule sets the main content of the page to only 
-take up a percentage of the view and centers it*/
+        /* Black background for the whole page */
 
-.wrapper {
-    width: 75%;
-    margin: 0 auto;
-    border: 5px solid yellow;
-    padding: .25rem;
-    background-color: white;
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-/* Header flex rules */
-
-header {
-    display: flex;
-    border: 0px solid red;
-    flex-basis: 10%;
-}
-
-header p {
-    padding-left: .5rem;
-    border: 0px solid red;
-    margin: 0;
-    flex-basis: 37%;
-}
-
-h1 {
-    font-family: 'Bangers', cursive;
-    font-size: 3rem;
-    text-align: left;
-    margin: 0 0 0 .25rem;
-    flex-basis: 30%;
-}
-
-/* resize image, round corners */
-
-img.coffee {
-    width: 30%;
-    display: block;
-    box-shadow: 3px 3px #252C3F;
-    margin: 0 auto;
-    border: 2px solid black;
-    border-radius: .5rem;
-}
-
-
-/*  nav bar styling */
-
-nav {
-    border: 0px solid black;
-    flex-basis: 4%;
-}
-
-nav ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    border: 0px dotted red;
-}
-
-nav li {
-    border: 1px solid black;
-    border-radius: .5rem;
-    padding: .25rem;
-    flex-basis: 30%;
-    list-style-type: none;
-    background-color: black;
-    text-align: center;
-}
-
-nav li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-family: 'Bangers', cursive;
-}
-
-nav li:hover {
-    background-color: #551A8B;
-    color: white;
-}
-
-
-/* Grey panels */
-
-main {
-    flex-basis: 80%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: center;
-    margin-top: 0;
-    border: 2px dotted green;
-}
-
-.flex {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    margin: .35rem 0;
-    border: 3px dotted green;
-}
-
-.panel {
-    background-color: gray;
-    border: 2px solid black;
-    border-radius: .25rem;
-    padding: 0 .25rem 0 0;
-}
-
-h2 {
-    font-family: 'Bangers', cursive;
-    font-size: 2.5rem;
-    padding: 1rem;
-    color: white;
-    background-color: #551A8B;
-    border-radius: .25rem;
-    margin-left: .25rem;
-    text-align: center;
-    flex-basis: 50%;
-}
-
-.tag {
-    font-size: .8rem;
-    background-color: #FFF400;
-    text-align: center;
-}
-
-
-.one {
-    flex-basis: 41%;
-}
-
-.homeone {
-    flex-basis: 30%;
-}
-
-.hometwo {
-    flex-basis: 67.5%;
-}
-
-.two {
-    flex-basis: 57%;
-}
-
-.three {
-    flex-basis: 64%;
-}
-
-.four {
-    flex-basis: 34%;
-}
-
-p, fieldset {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 1rem;
-    border-radius: .25rem;
-    padding: .25rem;
-    margin-left: .25rem;
-    letter-spacing: 1px;
-}
-
-.exposition {
-    background-color: white;
-}
-
-.dateloc, fieldset {
-    font-size: .8rem;
-    display: inline-block;
-}
-
-.dateloc {
-    background-color: #FFF400;
-    margin: 0;
-}
-
-fieldset {
-    background-color: white; 
-    border: none;
-    margin: .25rem; 
-}
-
-label {
-    display: block;
-}
-
-.dialogue {
-    position: relative;
-    border-radius: .25rem;
-    padding: .25rem;
-    margin-left: .25rem;
-    background-color: #551A8B;
-}
-
-div.dialogue {
-    padding: 0;
-}
-.dialogue p {
-    font-family: 'Permanent Marker', cursive;
-    color: white;
-    padding: .25rem;
-}
-
-.dialogue::after {
-    content: '';
-    position: absolute;
-    top: 0; 
-    left: 5%; 
-    width: 0; 
-    height: 0; 
-    border: 0.845em solid transparent; 
-    border-bottom-color: #551A8B; 
-    border-top: 0; 
-    border-right: 0; 
-    margin-left: -0.422em; 
-    margin-top: -0.84em;
-
-}
-
-/* Footer styling */
-
-footer {
-    flex-basis: 5%;
-}
-
-.right {
-    text-align: right;
-}
-
-footer ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    border: 0px solid yellow;
-}
-
-footer li {
-    list-style-type: none;
-    margin-right: 1.4rem;
-    border: 0px dotted orange;
-}
-
-/* Bigger social icons, enlarge when you hover over them */
-footer i {
-    transform: scale(2); 
-}
-
-footer i:hover {
-    transform: scale(2.5);
-}
+        body {
+            background-color: black;
+        }
+        
+                /* Wrapper rule sets the main content of the page to only 
+                take up a percentage of the view and centers it - white background*/
+        
+        .wrapper {
+            width: 75%;
+            margin: 0 auto;
+            border: 5px solid yellow;
+            padding: .25rem;
+            background-color: white;
+            border-radius: .5rem;
+        }
+        
+                /* Header styles:
+                 - Make header a flex box so the main title, pic, and description all line up nicely
+                 - Set flex basis for each flex item
+                 */
+        
+        header {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            border: 0px solid red;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            margin: .5rem 0 0 .25rem;
+            border: 0px dotted blue;
+            flex-basis: 28%;
+        }
+        
+        header p {
+            border: 0px dashed green;
+            display: inline;
+            padding-left: .5rem;
+            margin: 1.25rem .25rem 0 .25rem;
+            flex-basis: 30%;
+        }
+        
+        header img {
+            flex-basis: 18%;
+            height: 5rem;
+            border: 0px solid gray;
+            flex-basis: 28%;
+            max-width: 100%;
+        }
+        
+                /* Nav bar styles - horizontal buttons  */
+        
+        nav ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            border: 0px dotted red;
+        }
+                
+        nav li {
+            border: 1px solid black;
+            border-radius: .5rem;
+            padding: .25rem;
+            margin-top: .25rem;
+            flex-basis: 30%;
+            list-style-type: none;
+            background-color: black;
+            text-align: center;
+        }
+                
+        nav li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav li:hover {
+            background-color: #551A8B;
+        }
+        
+                /* Typography */
+        
+        h1, h2, h3, nav li {
+            font-family: 'Bangers', cursive;
+        }
+        
+        h1 {
+            font-size: 3rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        
+        p {
+            font-size: 1rem;
+        }
+        
+        p, li {
+            font-family: 'Permanent Marker', cursive;
+        }
+        
+        li {
+            font-size: 1.15rem;
+        }
+        
+                /* Footer styles  */
+                
+        footer ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            border: 0px solid yellow;
+        }
+                
+        footer li {
+            list-style-type: none;
+            margin-right: 1.6rem;
+            border: 0px dotted orange;
+        }
+                
+                /* Bigger social icons, enlarge when you hover over them */
+        footer i {
+            transform: scale(2); 
+        }
+                
+        footer i:hover {
+            transform: scale(2.5);
+        }
+        
+        /* Home page specific styles */
+        
+        .bigpanel, .flex {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        
+        .frameleft {
+            flex-basis: 40%;
+        }
+        
+        .frameright {
+            flex-basis: 51%;
+        }
+        
+        
+        .frameright ul, .frameright2 ul {
+            margin-top: 0rem;
+        }
+        
+        /* dateloc class is for comic page fyi */
+        
+        .label, .exposition, .sub, .dateloc {
+            border-radius: .5rem;
+            padding: .75rem;
+        }
+        
+        .label, .dateloc {
+            background-color: #FFF400;
+            display: inline-block;
+        }
+        
+        .label {
+            margin: .5rem 0 0 0;
+        }
+        
+        .exposition {
+            background-color: gray;
+        }
+        
+        .coffee {
+            display: block;
+            border: 3px solid black;
+            max-width: 100%;
+            border-radius: .25rem;
+        }
+        
+        li.exposition, li.sub {
+            list-style-type: none;
+        }
+        
+        .sub {
+            background-color: #551A8B;
+            color: white;
+            font-size: .9rem;
+        }
+        
+        
+        /* Comic page specific styles */
+        
+                /* Make comic panels flex items */
+        
+        .flex {
+            margin: .25rem 0;
+        }
+        
+        .panel {
+            border: 3px solid black;
+            border-radius: .5rem;
+            background-color: grey;
+        }
+        
+                /* Each panel takes up a little less than 1/4th of the space */
+        
+        .one, .two, .three, .four {
+            flex-basis: 23%;
+        }
+        
+        .one, .two, .three, .four {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        
+                /* Make image in first panel responsive, take up full panel width */
+        
+        .panel img {
+            max-width: 100%;
+            flex-basis: 40%;
+        }
+        
+        .panel h3 {
+            flex-basis: 5%;
+        }
+        
+        .panel p {
+            flex-basis: 13%;
+        }
+        
+                /* Make yellow panel headers flush with top of panel */
+        
+        .dateloc {
+            margin: 0;
+        }
+        
+        p.exposition {
+            margin: 0;
+        }
+        
+                /* Create styling for speech bubble */
+        
+        .dialogue {
+            position: relative;
+            border-radius: .25rem;
+            padding: .5rem;
+            margin: 0;
+            background-color: #551A8B;
+        }
+        
+        div.dialogue {
+            padding: 0;
+        }
+        p.dialogue {
+            color: white;
+        }
+        
+        .dialogue::after {
+            content: '';
+            position: absolute;
+            top: 0; 
+            left: 5%; 
+            width: 0; 
+            height: 0; 
+            border: 1.8em solid transparent; 
+            border-bottom-color: #551A8B; 
+            border-top: 0; 
+            border-right: 0; 
+            margin-top: -1.7em;
+        }
+        
+        /* Get rid of 90s style border on checklist*/
+        
+        fieldset {
+            border: none;
+            margin: 0;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1rem;
+        }
+        
+        /* Display each checklist item on its own line, give space between each label  */
+        
+        label {
+            display: block;
+            margin-bottom: .5rem;
+            padding: .25rem;
+        }
+        
+        
+        /* Projects page specific styles */
+        
+        
+        .frameright2 {
+            flex-basis: 57%;
+        }
+        
+        /* link take up full button area */
+        
+        .frameright2 a {
+            display: block;
+        }
+        
+        .test > li:hover {
+            background-color: white;
+            border: 3px solid black;
+        }
+        
