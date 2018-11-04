@@ -1,0 +1,194 @@
+/* Styles for every page */
+
+        /* Black background for the whole page */
+
+body {
+    background-color: black;
+}
+
+        /* Wrapper rule sets the main content of the page to only 
+        take up a percentage of the view and centers it - white background*/
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    border: 5px solid yellow;
+    padding: .25rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+        /* Header styles:
+         - Make header a flex box so the main title, pic, and description all line up nicely
+         - Set flex basis for each flex item
+         */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 0px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: .5rem 0 0 .25rem;
+    border: 0px dotted blue;
+    flex-basis: 28%;
+}
+
+header p {
+    border: 0px dashed green;
+    display: inline;
+    padding-left: .5rem;
+    margin: 1.25rem .25rem 0 .25rem;
+    flex-basis: 30%;
+}
+
+header img {
+    flex-basis: 18%;
+    height: 5rem;
+    border: 0px solid gray;
+    flex-basis: 28%;
+    max-width: 100%;
+}
+
+        /* Nav bar styles - horizontal buttons  */
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    border: 0px dotted red;
+}
+        
+nav li {
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .25rem;
+    margin-top: .25rem;
+    flex-basis: 30%;
+    list-style-type: none;
+    background-color: black;
+    text-align: center;
+}
+        
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover {
+    background-color: #551A8B;
+}
+
+        /* Typography */
+
+h1, h2, nav li {
+    font-family: 'Bangers', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+p, li {
+    font-family: 'Permanent Marker', cursive;
+}
+
+li {
+    font-size: 1.15rem;
+}
+
+        /* Footer styles  */
+        
+footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    border: 0px solid yellow;
+}
+        
+footer li {
+    list-style-type: none;
+    margin-right: 1.6rem;
+    border: 0px dotted orange;
+}
+        
+        /* Bigger social icons, enlarge when you hover over them */
+footer i {
+    transform: scale(2); 
+}
+        
+footer i:hover {
+    transform: scale(2.5);
+}
+
+/* Home page specific styles */
+
+.bigpanel {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.frameleft {
+    flex-basis: 45%;
+}
+
+.frameright {
+    flex-basis: 51%;
+}
+
+
+.frameright ul {
+    margin-top: 0rem;
+}
+
+.label, .exposition, .coffee, .sub {
+    border-radius: .5rem;
+    padding: .75rem;
+}
+
+.label {
+    background-color: #FFF400;
+    display: inline-block;
+    margin: .5rem 0 0 0;
+}
+
+.exposition {
+    background-color: gray;
+}
+
+.coffee {
+    display: block;
+    border: 5px solid black;
+    max-width: 100%;
+}
+
+li.exposition, li.sub {
+    list-style-type: none;
+}
+
+li.sub {
+    background-color: #551A8B;
+    color: white;
+    font-size: .9rem;
+}
+
+
+/* Comic page specific styles */
+
+/* Projects page specific styles */

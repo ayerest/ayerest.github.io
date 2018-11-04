@@ -11,6 +11,9 @@ take up a percentage of the view and centers it*/
     border: 5px solid yellow;
     padding: .25rem;
     background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 /* Header flex rules */
@@ -18,6 +21,7 @@ take up a percentage of the view and centers it*/
 header {
     display: flex;
     border: 0px solid red;
+    flex-basis: 10%;
 }
 
 header p {
@@ -35,13 +39,13 @@ h1 {
     flex-basis: 30%;
 }
 
-/* resize image, round corners, and float to the right */
+/* resize image, round corners */
 
-img {
-    height: 3.5rem;
-    width: 9rem;
-    margin-left: 1rem;
+img.coffee {
+    width: 30%;
+    display: block;
     box-shadow: 3px 3px #252C3F;
+    margin: 0 auto;
     border: 2px solid black;
     border-radius: .5rem;
 }
@@ -51,6 +55,7 @@ img {
 
 nav {
     border: 0px solid black;
+    flex-basis: 4%;
 }
 
 nav ul {
@@ -66,7 +71,7 @@ nav li {
     border: 1px solid black;
     border-radius: .5rem;
     padding: .25rem;
-    flex-basis: 23.5%;
+    flex-basis: 30%;
     list-style-type: none;
     background-color: black;
     text-align: center;
@@ -85,52 +90,101 @@ nav li:hover {
 }
 
 
-
 /* Grey panels */
+
+main {
+    flex-basis: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    margin-top: 0;
+    border: 2px dotted green;
+}
 
 .flex {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     margin: .35rem 0;
-    border: 0px dotted green;
+    border: 3px dotted green;
 }
 
 .panel {
-    flex-basis: 48.8%;
     background-color: gray;
     border: 2px solid black;
     border-radius: .25rem;
     padding: 0 .25rem 0 0;
 }
 
-p {
-    font-family: 'Permanent Marker', cursive;;
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: white;
+    background-color: #551A8B;
+    border-radius: .25rem;
+    margin-left: .25rem;
+    text-align: center;
+    flex-basis: 50%;
+}
+
+.tag {
+    font-size: .8rem;
+    background-color: #FFF400;
+    text-align: center;
+}
+
+
+.one {
+    flex-basis: 41%;
+}
+
+.homeone {
+    flex-basis: 30%;
+}
+
+.hometwo {
+    flex-basis: 67.5%;
+}
+
+.two {
+    flex-basis: 57%;
+}
+
+.three {
+    flex-basis: 64%;
+}
+
+.four {
+    flex-basis: 34%;
+}
+
+p, fieldset {
+    font-family: 'Permanent Marker', cursive;
     font-size: 1rem;
-    letter-spacing: 1px;
-    background-color: white;
     border-radius: .25rem;
     padding: .25rem;
     margin-left: .25rem;
+    letter-spacing: 1px;
+}
+
+.exposition {
+    background-color: white;
+}
+
+.dateloc, fieldset {
+    font-size: .8rem;
+    display: inline-block;
 }
 
 .dateloc {
-    font-size: .9rem;
     background-color: #FFF400;
     margin: 0;
-    border: 0px solid blue;
-    display: inline-block;
 }
 
 fieldset {
-    font-size: 1rem;
-    font-family: 'Permanent Marker', cursive;
-    letter-spacing: 1px;
-    background-color: white;
-    border-radius: .25rem;
-    padding: .25rem;   
+    background-color: white; 
     border: none;
-    display: inline-block;
     margin: .25rem; 
 }
 
@@ -138,8 +192,44 @@ label {
     display: block;
 }
 
+.dialogue {
+    position: relative;
+    border-radius: .25rem;
+    padding: .25rem;
+    margin-left: .25rem;
+    background-color: #551A8B;
+}
+
+div.dialogue {
+    padding: 0;
+}
+.dialogue p {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    padding: .25rem;
+}
+
+.dialogue::after {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 5%; 
+    width: 0; 
+    height: 0; 
+    border: 0.845em solid transparent; 
+    border-bottom-color: #551A8B; 
+    border-top: 0; 
+    border-right: 0; 
+    margin-left: -0.422em; 
+    margin-top: -0.84em;
+
+}
 
 /* Footer styling */
+
+footer {
+    flex-basis: 5%;
+}
 
 .right {
     text-align: right;
@@ -154,7 +244,7 @@ footer ul {
 
 footer li {
     list-style-type: none;
-    margin-right: 1.2rem;
+    margin-right: 1.4rem;
     border: 0px dotted orange;
 }
 
