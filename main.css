@@ -316,7 +316,6 @@
         }
         
         .test > li:hover {
-            background-color: white;
-            border: 3px solid black;
+            background-color: steelblue;
         }
         
